@@ -11,13 +11,13 @@ This is one project with library and example to show how to test the Android UI 
 
 2. Project Tree:
  
-    lib -- 
+    1) lib --
             luajava-apklib :  
                     The Project to Ndk the libs of lua engine for Android 
             robot-apklib : 
                     The Library with wrapper LuaEngine and Instrumentation and others
                     you can add more operations to mapping in IOper.java and IView.java and so on...
-    test -- 
+    2) test --
             test-robot-lib-app:
                     The project of app
             test-robot-lib-app-instr:
