@@ -1,0 +1,53 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin" >
+
+    <TextView
+        android:id="@+id/hello_world_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hello_world" />
+
+    <Button
+        android:id="@+id/btn_cnt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/hello_world_tv"
+        android:layout_below="@+id/hello_world_tv"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="42dp"
+        android:text="0" />    
+    
+    <Button
+        android:id="@+id/btn_next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="33dp"
+        android:text="Next" />
+
+    <Button
+        android:id="@+id/btn_cnt_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btn_cnt"
+        android:layout_alignBottom="@+id/btn_cnt"
+        android:layout_marginLeft="22dp"
+        android:layout_toRightOf="@+id/btn_next"
+        android:text="1" />
+
+    <Button
+        android:id="@+id/btn_cnt_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_cnt_1"
+        android:layout_marginTop="40dp"
+        android:layout_toLeftOf="@+id/btn_cnt_1"
+        android:text="2" />
+
+</RelativeLayout>

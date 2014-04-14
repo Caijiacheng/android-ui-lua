@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello instr of test-robot-lib-app</string>
+    <string name="app_name">test-robot-lib-app-instr</string>
+</resources>

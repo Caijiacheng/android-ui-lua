@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
+                              http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<parent>
+		<artifactId>lib-parent</artifactId>
+		<groupId>org.snail.sdet</groupId>
+		<version>1.0-SNAPSHOT</version>
+	</parent>
+	<groupId>org.snail.sdet</groupId>
+	<artifactId>luajava-apklib</artifactId>
+	<packaging>apklib</packaging>
+	<version>1.0-SNAPSHOT</version>
+	<name>Android NDK - Native Luajava</name>
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<top.dir>${basedir}/../..</top.dir>
+	</properties>
+
+	
+	<build>
+		<plugins>
+
+			<plugin>
+				<artifactId>maven-clean-plugin</artifactId>
+				<configuration>
+					<filesets>
+						<fileset>
+							<directory>libs</directory>
+						</fileset>
+						<fileset>
+							<directory>obj</directory>
+						</fileset>
+					</filesets>
+				</configuration>
+			</plugin>
+
+			<plugin>
+				<groupId>com.jayway.maven.plugins.android.generation2</groupId>
+				<artifactId>android-maven-plugin</artifactId>
+				<extensions>true</extensions>
+				<executions>
+					<execution>
+						<phase>compile</phase>
+						<goals>
+							<goal>ndk-build</goal>
+						</goals>
+					</execution>
+				</executions>
+				<configuration>
+					<ndkArchitecture>x86 armeabi</ndkArchitecture>
+					<attachNativeArtifacts>true</attachNativeArtifacts>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+
+</project>

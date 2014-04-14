@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<artifactId>lib-parent</artifactId>
+		<groupId>org.snail.sdet</groupId>
+		<version>1.0-SNAPSHOT</version>
+	</parent>
+	<groupId>org.snail.sdet</groupId>
+	<artifactId>robot-apklib</artifactId>
+	<version>1.0-SNAPSHOT</version>
+	<packaging>apklib</packaging>
+	<name>robot-apklib -- robot apk lib with luajava dependencys</name>
+
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<top.dir>${basedir}/../..</top.dir>
+	</properties>
+
+	<dependencies>
+	    
+		<dependency>
+			<groupId>com.google.android</groupId>
+			<artifactId>android-test</artifactId>
+			<scope>provided</scope>
+		</dependency>	    
+	    
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<scope>provided</scope>
+		</dependency>      
+	    
+		<dependency>
+			<groupId>com.google.android</groupId>
+			<artifactId>android</artifactId>
+			<scope>provided</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>com.qihoo.sdet</groupId>
+			<artifactId>luajava-apklib</artifactId>
+			<version>1.0-SNAPSHOT</version>
+			<type>apklib</type>
+		</dependency>
+
+
+		<dependency>
+			<groupId>com.jayway.android.robotium</groupId>
+			<artifactId>robotium-solo</artifactId>
+			<version>4.3.1</version>
+		</dependency>
+
+        <!-- if the target app to instr has the dependencies of slf4j and logback, it would be conficted . so make <scope> to tag of PROVIDED  -->
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-api</artifactId>
+		</dependency>
+		
+		<dependency>
+			<groupId>com.github.tony19</groupId>
+			<artifactId>logback-android-classic</artifactId>
+		</dependency>
+
+	</dependencies>
+	<build>
+		<finalName>${project.artifactId}</finalName>
+		<pluginManagement>
+			<plugins>
+				<plugin>
+					<groupId>com.jayway.maven.plugins.android.generation2</groupId>
+					<artifactId>android-maven-plugin</artifactId>
+					<extensions>true</extensions>
+				</plugin>
+			</plugins>
+		</pluginManagement>
+		<plugins>
+			<plugin>
+				<groupId>com.jayway.maven.plugins.android.generation2</groupId>
+				<artifactId>android-maven-plugin</artifactId>
+				<configuration>
+					<sdk>
+						<platform>16</platform>
+					</sdk>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+</project>
