@@ -4,14 +4,15 @@ android-ui-lua
 This is one project with library and example to show how to test the Android UI with the Lua Script. 
 
 
-Project description:
+1. Project description:
+
     This is the simple example to show how to test the Android UI with the LUA.
     test/test-robot-lib-app-instr/script has the simple test file of lua
 
-    
-    
-Project Tree:
-    root -- lib -- 
+2. Project Tree:
+
+    root -- 
+            lib -- 
                     luajava-apklib :  
                                 The Project to Ndk the libs of lua engine for Android 
                     robot-apklib : 
@@ -23,8 +24,8 @@ Project Tree:
                     test-robot-lib-app-instr:
                                 The Project of instr app to test-robot-lib-app.
 
-HOW TO RUN the Test:
-    INSTALL:
+3. HOW TO RUN the Test:
+
         1) install depends:
             MAVEN: 
                 http://maven.apache.org/
@@ -32,6 +33,7 @@ HOW TO RUN the Test:
                 http://developer.android.com/sdk/index.html            
             ANDROID NDK:
                 http://developer.android.com/tools/sdk/ndk/index.html
+
         2) Set MAVEN Depends Path:
             ANDROID_HOME = ${sdk_path}
             ANDROID_NDK_HOME = ${ndk_path}
@@ -43,9 +45,8 @@ HOW TO RUN the Test:
         3) RUN:
             mvn clean install
 
-            
-            
-QA:
+4. QA:
+
     1. why Lua to UI Script?
         1) java and eclipse is too heavy to test Android UI which is changing frequencies.
         
