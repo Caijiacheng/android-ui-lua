@@ -10,19 +10,18 @@ This is one project with library and example to show how to test the Android UI 
     test/test-robot-lib-app-instr/script has the simple test file of lua
 
 2. Project Tree:
-
-    root -- 
-            lib -- 
-                    luajava-apklib :  
-                            The Project to Ndk the libs of lua engine for Android 
-                    robot-apklib : 
-                            The Library with wrapper LuaEngine and Instrumentation and others
-                            you can add more operations to mapping in IOper.java and IView.java and so on...
-            test -- 
-                    test-robot-lib-app:
-                            The project of app
-                    test-robot-lib-app-instr:
-                            The Project of instr app to test-robot-lib-app.
+ 
+    lib -- 
+            luajava-apklib :  
+                    The Project to Ndk the libs of lua engine for Android 
+            robot-apklib : 
+                    The Library with wrapper LuaEngine and Instrumentation and others
+                    you can add more operations to mapping in IOper.java and IView.java and so on...
+    test -- 
+            test-robot-lib-app:
+                    The project of app
+            test-robot-lib-app-instr:
+                    The Project of instr app to test-robot-lib-app.
 
 3. HOW TO RUN the Test:
 
