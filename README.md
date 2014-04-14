@@ -48,9 +48,11 @@ This is one project with library and example to show how to test the Android UI 
 4. QA:
 
     1. why Lua to UI Script?
-        1) java and eclipse is too heavy to test Android UI which is changing frequencies.
+        java and eclipse is too heavy to test Android UI which is changing frequencies.
         
     2. dex failed?
-        if the target app to instr has the dependencies of slf4j and logback, it would be conficted . 
+    
+        if the target app to instr has the dependencies of slf4j and logback, it would be conficted.
+        try to :
         1) make <scope> to tag of PROVIDED and retry. if failed, go 2)
         2) remove the dependencies of slf4j and logback
