@@ -44,7 +44,20 @@ This is one project with library and example to show how to test the Android UI 
         3) RUN:
             mvn clean install
 
-4. QA:
+
+4. the STEPS to code the LUA SCRIPT FOR ANDROID UI :
+
+     1) find the views of Window of Android
+         views = getviewsex() 
+     2) filter the view for operations
+         btns = filter(views, function (x) return x:type() == "android.widget.Button" end)
+     3) assert the UI view is expected
+         assert(table.getn(btns) == 1, "Activitys has only one btn")
+     4) do the operations of UI
+         oper:click(btns[1])
+     5) go to 1), and repeat to do
+
+5. QA:
 
     1. why Lua to UI Script?
     
