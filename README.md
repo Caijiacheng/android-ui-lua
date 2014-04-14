@@ -14,15 +14,15 @@ This is one project with library and example to show how to test the Android UI 
     root -- 
             lib -- 
                     luajava-apklib :  
-                                The Project to Ndk the libs of lua engine for Android 
+                            The Project to Ndk the libs of lua engine for Android 
                     robot-apklib : 
-                                The Library with wrapper LuaEngine and Instrumentation and others
-                                you can add more operations to mapping in IOper.java and IView.java and so on...
+                            The Library with wrapper LuaEngine and Instrumentation and others
+                            you can add more operations to mapping in IOper.java and IView.java and so on...
             test -- 
                     test-robot-lib-app:
-                                The project of app
+                            The project of app
                     test-robot-lib-app-instr:
-                                The Project of instr app to test-robot-lib-app.
+                            The Project of instr app to test-robot-lib-app.
 
 3. HOW TO RUN the Test:
 
@@ -48,7 +48,8 @@ This is one project with library and example to show how to test the Android UI 
 4. QA:
 
     1. why Lua to UI Script?
-        java and eclipse is too heavy to test Android UI which is changing frequencies.
+    
+       java and eclipse is too heavy to test Android UI which is changing frequencies.
         
     2. dex failed?
     
